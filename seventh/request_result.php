@@ -19,9 +19,6 @@
         // закрываем подключение
         mysqli_close($link);
 ?>    
-    <script>
-        
-    </script>
     <div class='modal-dialog modal-dialog-scrollable' id='content'>
         <table class='table table-dark table-striped my-5 mx-auto'>
         <thead>
@@ -38,6 +35,7 @@
                 <?php echo $row['name'];?>
                 </td>
             </tr>
+            <p id="name" class="name invisible position-absolute"><?php echo $row['name'];?></p>
             <?php endwhile; ?>
         </tbody>
         </table>
